@@ -19,7 +19,7 @@ void Traversal(struct Node * head){
          ptr=ptr->next;
           }while(ptr != head);
 }
-
+ 
 int main(){
     struct Node * head ;
     struct Node * second;

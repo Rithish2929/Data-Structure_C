@@ -60,3 +60,48 @@ Big O-Order of.
     1)While Popping the stack should'nt Underflow ->Then it is unbalanced expression.
     2)At End Of Expression(EOE),the stack should be Empty ->Else it unbalanced Expression.
        
+  *Infix,Postfix and Prefix:-
+    >These are Notations to write a expression.
+    >Infix-
+      <operant> <operator> <operant>    Eg-p*q,a+b,etc.
+    >Postfix-
+      <operant>,<operant> <operator>    Eg- ab +,pq *
+    >Prefix-
+      <operator> <operant>,<operant>
+    >We convert Infix to postfix as it is easier for machine to understand.
+        Infix-G*(A+D)*D
+        Postfix-GAD+*D*
+    >How to Convert Infix to Prefix and Postfix:-
+        i)Parenthesis the hole expression.
+        ii)The start converting from infix to postfix from the innermost expression.
+
+  -->Queue:Follows FIFO.
+    >Data:Storage,Insertion End and Deletion End .
+    >Methods:
+      Enqueue-Add a Element 
+      Dequeue-Remove a element .
+      First value.
+      Last value
+      Peek(pos)
+      IsFull,IsEmpty
+    >Can be Implemented In Array,L_L and other ADT's too.
+
+    >Drawbacks-
+      Space is not efficientle used.(As the space before the front is empty upon Deletion)
+      Therefore,To combat this Circular Queue is Introduced.
+
+    >Circular Queue:-
+      Increment Occurs like:-
+        Linear Increment - 
+          i=i+1
+        Circular Increment -
+          i=(i+1) % size **Important
+
+    >Double-Ended Queue:-
+    It doesnt follow FIFO
+
+-->Sorting Algorithm:-
+  *Important Factors-Time Complexity,Space Complexity(Does ur algorithm take lot of space for big inputs),Stability(When two equal values are being sorted, the appearing in array should also be first in sorted array),Internal Sorting Algorithm(All data is loaded in memory) and External Sorting Algorithm(opp),Adaptive, Recurcive and Non Recurcive.
+  *These Factors help us take a decision on which sorting algorithm to use.
+
+  
