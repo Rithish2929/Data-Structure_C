@@ -104,4 +104,28 @@ Big O-Order of.
   *Important Factors-Time Complexity,Space Complexity(Does ur algorithm take lot of space for big inputs),Stability(When two equal values are being sorted, the appearing in array should also be first in sorted array),Internal Sorting Algorithm(All data is loaded in memory) and External Sorting Algorithm(opp),Adaptive, Recurcive and Non Recurcive.
   *These Factors help us take a decision on which sorting algorithm to use.
 
-  
+
+
+-->Trees:-
+  * It is Ideal for representing Hierarchical Data.
+  *Binary Tree-They are Trees with thier degree(No. of direct Children) not more than 2.
+  *Edge-Link That connects 2 Nodes.
+  * n nodes=n-1 edges.
+  *Degree of Tree = Highest degree of a Node present in the Tree.
+
+  * Types Of Binary Trees:
+    i)Full or Strict-All Nodes have either 0 or 2 Children.
+    ii)Perfect-Internal nodes have 2 Children and All leaf Nodes are on Same Level.
+    iii)Complete-All levels are Completely filled except possibly the last level and last level is left alligned.
+    iv)Degentrate Tree - It the when Parent Nodes only Have One Child.In it there is left Skewed and right Skewed.
+
+  * Traversal in Tree:-
+    i)PreOrder Traversal:
+        Root-->Left Subtree-->Right Subtree
+
+    ii)PostOrder Traversal:
+        Left Subtree-->Right Subtree-->Root
+
+    iii)InOrder Traversal:
+        Left Subtree-->Root -->Right Subtree
+    REMEMBER-Through the Position of the Root
