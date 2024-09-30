@@ -16,7 +16,7 @@ void enqueue(int val){
     }else{
         ptr->data=val;
         ptr->next =NULL;    //Since it is added in the last and last element in LL has a NULL
-        if(f==NULL){
+        if(f==r==NULL){
             f=r=ptr;          //This is special case where Queue is empty and we make front and rear the same element and then start adding 
         }else{
             r->next=ptr;

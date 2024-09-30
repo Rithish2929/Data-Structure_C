@@ -7,6 +7,21 @@ struct Node{
     struct Node * next;
 };
 
+void Trav_rev(struct Node * head){
+    struct Node * p=head;
+    while(p->next!=NULL){
+        printf("%d<->",p->data);
+        p=p->next;
+    };
+    printf("%d",p->data);
+    printf("\n");
+    while(p->prev!=NULL){
+        printf("%d<->",p->data);
+        p=p->prev;
+    }
+    printf("%d",p->data);
+}
+
 int main(){
     struct Node * N1=(struct Node *)malloc(sizeof(struct Node));
     struct Node * N2=(struct Node *)malloc(sizeof(struct Node));
@@ -28,6 +43,5 @@ int main(){
     N4->prev = N3;
     N4->data = 36;
     N4->next = NULL;
+    Trav_rev(N1);
 }
-
-//TASK-DO a Code for traversal complete list in forward till NULL then again go in Backward

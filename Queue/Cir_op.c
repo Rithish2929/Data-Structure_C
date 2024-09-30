@@ -40,8 +40,8 @@ int dequeue(struct Queue * q){
         printf("Queue is Empty !!\n");
         return val;
     }else{
-        q->f=(q->f+1)%q->size;      //The front is now pointing in the element which will then enqueued later 
         val=q->arr[q->f];
+        q->f=(q->f+1)%q->size;      //The front is now pointing in the element which will then enqueued later 
         printf("%d Successfully Dequeued!!!\n",val);
         return val;
     }

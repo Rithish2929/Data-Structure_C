@@ -28,9 +28,10 @@ void Push(struct Node *top,int val ){
     if(ptr==NULL){
         printf("Stack Overflow!!");
     }else{
-    ptr->data=val;
-    ptr->next=top;
-    top=ptr;}
+        ptr->data=val;
+        ptr->next=top;
+        top=ptr;
+    }
 }
 
 int Pop(struct Node * top){

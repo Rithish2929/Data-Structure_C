@@ -40,8 +40,8 @@ int dequeue(struct Queue * q){
         printf("The Queue is Empty!!");
         return a;
     }else{
-        q->front++;
-        a=q->arr[q->front];      //The front is now pointing in the element which will be left empty 
+        a=q->arr[q->front];   
+        q->front++;   //The front is now pointing in the element which will be left empty 
         printf("Dequeued: %d\n", a);
         return a;           
     }

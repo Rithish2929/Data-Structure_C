@@ -17,7 +17,7 @@ void Traversal(struct Node * head){
     do{             //Since the while loop won't start itself as ptr = head....This why we print first elements through the above 2 lines 
          printf("%d\n",ptr->data);   
          ptr=ptr->next;
-          }while(ptr != head);
+    }while(ptr != head);
 }
  
 int main(){
